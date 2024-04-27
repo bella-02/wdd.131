@@ -1,0 +1,31 @@
+.content {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5;
+}
+header {
+    text-align: center;
+    letter-spacing: 2px;
+}
+h5 {
+    color: #006EB6;
+    border-bottom: 1px solid grey;
+    margin-top: -10px;
+
+}
+p {
+    text-align: left;
+    padding: 5px;
+}
+li {
+    padding-bottom: 20px;
+}
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
