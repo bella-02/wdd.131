@@ -31,9 +31,9 @@ function viewHandler(event) {
     const src = clickedElement.src;
     const alt = clickedElement.alt;
 
-    const parts = src.split("-");
+    const parts = src.split("_");
 
-    const newSrc = parts[0] + "-full.jpeg";
+    const newSrc = parts[0] + "_full.jpeg";
 
     const viewerHTML = viewerTemplate(newSrc, alt);
     document.body.insertAdjacentHTML("afterbegin", viewerHTML);
