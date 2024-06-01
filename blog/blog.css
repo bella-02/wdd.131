@@ -49,35 +49,52 @@ a:visited {
 .title {
     font-family: 'lora',impact, serif;
     color: #AF1B3F;
-    font-size: 1.7em;
+    font-size: 1.9em;
+    margin: 0;
+    margin-top: 3px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 350px;
 }
 
 .article {
     grid-column-start: 1;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 650px;
+    padding-bottom: 50px;
 }
 
 img, .description, .title, .read {
     grid-column-start: 2;
 }
 
-img {
+.img, .description, .title {
     padding-left: 20px;
+}
+img {
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .details {
     grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 3;
-    padding: 20px;
+    grid-row-end: 4;
+    padding-right: 20px;
+    text-align: right;
+    line-height: .7em;
+    border-right:solid #EFC69B;
 }
- 
+
+.date {
+    font-size: 1.3em;
+}
+
+.description, .read {
+    font-size: 1.1em;
+}
 .read {
     color:#AF1B3F;
 }
@@ -85,5 +102,10 @@ img {
 .filter {
     grid-column-start: 2;
     grid-row-start: 1;
+    grid-row-end: 3;
+    border: solid #EFC69B;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
