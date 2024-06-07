@@ -1,0 +1,112 @@
+#creditCardForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+#cardFront, #cardBack {
+    background-color: lightgray;
+    width: 390px;
+    height: 250px;
+    border-radius: 6px;
+    padding: 20px 30px 30px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+
+}
+
+#cardFront {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    box-shadow: 5px 5px 10px #424B54;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+img {
+    grid-column-start: 2;
+    justify-self: end;
+}
+
+label {
+    display:block;
+    margin-bottom: 2px;
+
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#cardNumberContainer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#cardHolderContainer {
+    grid-column-start: 1;
+    align-self: end;
+}
+
+#expContainer {
+
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-column-gap: 10px;
+    margin-left: 10px;
+    align-items: end;
+}
+
+#cardMonth {
+    grid-column-start: 1;
+}
+
+#cardYear {
+    grid-column-start: 2;
+}
+
+#cardBack {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    margin-top: 40px;
+    margin-left: 100px;
+    z-index: -2;
+    display: grid;
+    grid-template-columns: 1fr 85px;
+    grid-template-rows: 1fr 50px;
+  }
+
+#cardCvcContainer {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding-right: 20px;
+}
+
+#cardStrip {
+    background-color: #424B54;
+    height: 60px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 360px;
+    height: 50px;
+}
+
+button {
+    grid-column-start: 1;
+    width: 80px;
+    height: 30px;
+    justify-self: end;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+
