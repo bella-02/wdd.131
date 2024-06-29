@@ -278,6 +278,7 @@ const recipes = [
 		recipeYield: '12 servings',
 		rating: 4
 	}
+
 ]
 
 export default recipes

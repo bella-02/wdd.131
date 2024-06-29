@@ -7,7 +7,7 @@
     <meta name="author" content="Bella Hunt">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <meta property="og:title" content="Your Title Here">
     <meta property="og:type" content="website">
@@ -26,32 +26,12 @@
 
     <main>
         <div id="search-container">
-            <input type="text" id="search" name="search" placeholder="Find a recipe"/>
-            <button>
+            <input type="text" id="search-input" placeholder="Find a recipe"/>
+            <button id="search-button" type="button">
                 <img id="search-img" src="images/search.svg" alt="search button">
             </button>
         </div>
-        <div class="recipe">
-            <img class="recipe-img" src="images/apple-crisp.jpg" alt="picture of apple-crisp">
-            <div class="recipe-details">
-                <p class="tag">dessert</p>
-                <h2 class="recipe-title">Apple Crisp</h2>
-
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
-        </div>
+        <figure id="recipe"></figure>
     </main>
 
     <footer>
