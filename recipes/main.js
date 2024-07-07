@@ -82,17 +82,11 @@ function filter(query) {
 
 function searchHandler(e) {
     e.preventDefault();
-
-    // Get the search input
     const searchInput = document.getElementById('search-input');
 
-
-    // Convert the value in the input to lowercase
     const query = searchInput.value.toLowerCase();
 
-    // Use the filter function to filter our recipes
     const filteredRecipes = filter(query);
 
-    // Render the filtered list
     renderRecipes(filteredRecipes);
 }
