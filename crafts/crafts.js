@@ -56,14 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
     }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelectorAll('img').forEach(image => {
         image.addEventListener('click', viewHandler);
     });
 });
+
+
 
 function viewerTemplate(pic, alt) {
     return `<div class="viewer">
